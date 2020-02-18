@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+html, body{
+	background-color: #ffffff;
+	color: #000000;
+	font-family: sans-serif;
+    line-height: 3vh;
+    overflow-wrap: break-word;
+}
+
+@keyframes pulse {
+    0% {background: rgba(192, 0, 0, 0.561)}
+    75%{background: rgba(185, 173, 0, 0.561)}
+    100% {background: rgba(192, 0, 0, 0.561)}
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+     "box0 box0"
+     "box1 box2"
+     "box3 box4"
+     "box5 box6"
+     "box7 box8";
+}
+
+.wrapper .grid-box {
+    box-shadow: 0.5rem 0.5rem 0.5rem  rgba(0, 0, 0, 0.205);
+    box-sizing: border-box;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #15749960;
+    transition: transform 2s;
+}
+
+.wrapper .grid-box:hover {
+    z-index: 3;
+    position: relative;
+    box-shadow: 2rem 2rem 2rem rgba(0,0,0,0.205);
+    transform: scale(1.25) scaleX(0.8);
+}
+
+.wrapper .element0 { 
+    grid-area: box0;
+}
+.wrapper .element1 { 
+    grid-area: box1;
+}
+.wrapper .element2 { 
+    grid-area: box2; 
+}
+.wrapper .element3 { 
+    grid-area: box3; 
+}
+.wrapper .element4 { 
+    grid-area: box4; 
+}
+.wrapper .element5 { 
+    grid-area: box5; 
+}
+.wrapper .element6 { 
+    grid-area: box6; 
+}
+.wrapper .element7 { 
+    grid-area: box7; 
+}
+.wrapper .element8 { 
+    grid-area: box8; 
+}
+
+svg {
+    transition: transform 1s;
+    border: 2px dotted red;
+}
+svg:hover{
+    transform: scale(0.5);
+}

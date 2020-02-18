@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang ="de-DE">
+    <head>
+        <title>SVG</title>
+        <meta charset = "UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="desciption" content="coding" >
+        <meta name="viewport"  content="width=device-width" initial-scale=1.0/>
+        <meta name="theme-color" content="#30147e;">
+        <link rel ="stylesheet" type="text/css;" href="style.css">
+        <script src="javascript.js" async defer></script> <!--the script attributes "async" and "defer" ensure that script is loaded after page is parsed-->
+    </head>
+    <body>
+        <main class="wrapper">
+            <div class="element0 grid-box">
+                <p id="heading1">My first SVG</p>
+            </div>
+            <div class="element1 grid-box">
+                <svg id="circle" width=92 height=92>
+                    <circle cx="46" cy="46" r="40" stroke="blue" stroke-width="6" fill="yellow"/>
+                </svg>
+            </div>
+            <div class="element2 grid-box">
+                <svg width=100 height=100>
+                    <rect x=0 y=0 width=100 height=80 style="fill:rgb(255, 0, 0);stroke-width:3;stroke:rgb(0, 255, 55);opacity:0,6" />
+                </svg>
+            </div>
+            <div class="element3 grid-box">
+                <svg width = 300 height = 300>
+                    <path d = "M 130 135 l 40 0 l 0 30 l -40 0 l 0 -30" />
+                </svg>
+            </div>
+            <div class="element4 grid-box">
+                <svg height=140 width=500>    
+                    <ellipse cx=250 cy=70 rx=100 ry=50
+                    style="fill:rgb(19, 234, 241);stroke:purple;stroke-width:2" />
+                </svg> 
+            </div>
+            <div class="element5 grid-box">
+                <svg height=500 width=500>
+                    <path d="M 100 200 S 150 100 200 200" fill="none"stroke="black" stroke-width="3"/>
+                    <path d="M 100 400 s 50 -100  100 0" fill="none"stroke="green" stroke-width="3"/>
+                </svg>
+            </div>
+            <div class="element6 grid-box">
+                <svg height=100% width=100%>
+                    <polygon points="0,0 100,100 100,0 0,100" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;" />
+                </svg>
+            </div>
+            <div class="element7 grid-box">
+                <svg>
+                    <text x="100" y="100" fontsize="40px"> Hallo Welt!</text>
+                </svg>
+            </div>
+            <div class="element8 grid-box">
+                <p id="lasttext"></p>
+            </div>
+        </main>
+    </body>
+</html>
